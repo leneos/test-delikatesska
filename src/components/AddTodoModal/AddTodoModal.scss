@@ -1,0 +1,29 @@
+.AddTodoModal {
+  width: 100%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 30px 20px 10px 20px;
+  background-color: #50e3a4;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: showModal 300ms linear;
+  .close-btn {
+    display: block;
+    border: none;
+    background: none;
+    font-size: 14px;
+    padding: 20px;
+  }
+  @keyframes showModal {
+    from {
+      bottom: -300px;
+    }
+    to {
+      bottom: 0;
+    }
+  }
+}

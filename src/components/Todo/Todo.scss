@@ -1,0 +1,43 @@
+.Todo {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  p {
+    font-size: 20px;
+  }
+  .Todo-btns {
+    display: flex;
+    button {
+      height: 32px;
+      width: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: none;
+
+      border-radius: 100%;
+      transition: border 200ms ease-in;
+      margin-left: 10px;
+    }
+    .delete-btn {
+      background: lightcoral;
+      border: none;
+      color: white;
+    }
+    .toggle-btn {
+      border: 4px solid #eef0f5;
+    }
+  }
+
+  &.done p {
+    color: #949494;
+  }
+  &.done .toggle-btn {
+    border: 4px solid #50e3a4;
+  }
+  &:last-child {
+    margin-bottom: 250px;
+  }
+}

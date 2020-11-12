@@ -1,0 +1,32 @@
+.DateHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    display: block;
+    margin: 0;
+  }
+  .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .day {
+      font-size: 50px;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    .month {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .year {
+      font-size: 20px;
+    }
+  }
+  .right {
+    .week-day {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+}

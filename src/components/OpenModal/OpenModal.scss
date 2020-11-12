@@ -1,0 +1,22 @@
+.OpenModal {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #50e3a4;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: none;
+  font-size: 30px;
+  color: #46bf8b;
+  animation: showAddButton 300ms ease-in-out;
+  bottom: 50px;
+  @keyframes showAddButton {
+    from {
+      bottom: -200px;
+    }
+    to {
+      bottom: 50px;
+    }
+  }
+}

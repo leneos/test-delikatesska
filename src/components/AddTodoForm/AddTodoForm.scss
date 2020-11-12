@@ -1,0 +1,19 @@
+.AddTodoForm {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+  padding: 20px;
+  input {
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    width: 70%;
+  }
+  button {
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    width: 30%;
+  }
+}
