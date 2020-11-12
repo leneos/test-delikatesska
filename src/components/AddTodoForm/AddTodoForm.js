@@ -11,6 +11,7 @@ export const AddTodoForm = () => {
         value={todoText}
         onChange={(e) => setTodoText(e.target.value)}
         type="text"
+        maxLength="50"
       />
       <button
         onClick={() => {

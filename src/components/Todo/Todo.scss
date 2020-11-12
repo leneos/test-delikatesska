@@ -6,6 +6,10 @@
   align-items: center;
   p {
     font-size: 20px;
+    max-width: 150px;
+
+    margin: 0;
+    word-wrap: break-word;
   }
   .Todo-btns {
     display: flex;
@@ -39,5 +43,13 @@
   }
   &:last-child {
     margin-bottom: 250px;
+  }
+}
+@media (min-width: 575px) {
+  .Todo {
+    p {
+      max-width: 50%;
+      word-wrap: break-word;
+    }
   }
 }
