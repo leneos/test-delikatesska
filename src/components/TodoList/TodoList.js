@@ -10,9 +10,9 @@ export const TodoList = () => {
     <ul className="TodoList">
       {todosStore.todos.map((todo) => (
         <Todo
-          isDone={todosStore.todos.find((item) => item.id === todo.id).done}
+          isDone={todo.done}
           delete={() => todosStore.deleteTodo(todo.id)}
-          toggleStatus={() => todosStore.toggleTodoStatus(todo.id)}
+          toggleStatus={() => todosStore.toggleTodoStatus(todo)}
           key={todo.id}
           text={todo.text}
         />

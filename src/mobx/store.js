@@ -13,9 +13,8 @@ export const createTodoStore = () => {
       this.todos = this.todos.filter((item) => item.id !== id);
       this.updateLS();
     },
-    toggleTodoStatus(id) {
-      let t = this.todos.find((item) => item.id === id);
-      t.done = !t.done;
+    toggleTodoStatus(todo) {
+      todo.done = !todo.done;
       this.updateLS();
     },
     toggleModal() {
