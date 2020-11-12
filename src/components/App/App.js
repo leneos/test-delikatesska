@@ -10,7 +10,7 @@ function App() {
   return useObserver(() => (
     <div className="App">
       <DateHeader />
-      {todosStore.todos.length > 0 && <TodoList />}
+      {todosStore.todos && <TodoList />}
       {!todosStore.isModalOpened && <OpenModal />}
       {todosStore.isModalOpened && <AddTodoModal />}
     </div>
