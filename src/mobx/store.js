@@ -2,9 +2,8 @@ import { nanoid } from "nanoid";
 
 export const createTodoStore = () => {
   return {
-    todos:
-      JSON.parse(localStorage.getItem("todos")) ||
-      localStorage.setItem("todos", "[]"),
+    todos: JSON.parse(localStorage.getItem("todos")) || [],
+
     isModalOpened: false,
     addTodo(text) {
       this.todos.push({ text, id: nanoid(), done: false });

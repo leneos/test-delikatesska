@@ -7,10 +7,11 @@ import { AddTodoModal } from "../AddTodoModal/AddTodoModal";
 import { useTodosStore } from "../../mobx/TodosContext";
 function App() {
   const todosStore = useTodosStore();
+
   return useObserver(() => (
     <div className="App">
       <DateHeader />
-      {todosStore.todos && <TodoList />}
+      {todosStore.todos.length > 0 && <TodoList />}
       {!todosStore.isModalOpened && <OpenModal />}
       {todosStore.isModalOpened && <AddTodoModal />}
     </div>
